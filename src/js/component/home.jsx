@@ -23,11 +23,7 @@ const Home = () => {
 
 	function erase(i) {
 		// This function will erase the tasks added to the list
-		if (i > -1) {
-			//validate that the array is not empty
-			let deleteTask = taskList.filter((value, item) => item !== i);
-			setTaskList(deleteTask);
-		}
+	
 	}
 
 	return (
