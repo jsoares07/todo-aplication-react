@@ -62,7 +62,7 @@ const Home = () => {
 					})
 				)}
 
-				{/*We create another conditional in wich we take the previous taskList.length === 0 to show the same string of "No tasks, add a task" */}
+				{/*We create another conditional in wich we take the previous taskList.length === 0 to show the same string empty */}
 				{taskList.length === 0 ? (
 					""
 				) : (
