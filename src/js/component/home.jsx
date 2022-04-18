@@ -21,7 +21,7 @@ const Home = () => {
 		return;
 	}
 
-	function erase(i) {
+	function erase() {
 		// This function will erase the tasks added to the list
 	}
 
