@@ -12,9 +12,9 @@ const Home = () => {
 				//This will show an alert if the input is empty  and we press the Enter key
 				alert("You have to add a new task");
 			} else {
-				//This will link the task list with the use state with the list.
+				//This will link the tasklist with the use satate with the list.
 				setTaskList((arr) => [...arr, newTask]);
-				setNewTask("");
+				setNewTask(""); // Will return to  blank after pressing the enter key
 				return;
 			}
 		}
@@ -66,7 +66,7 @@ const Home = () => {
 				{taskList.length === 0 ? (
 					""
 				) : (
-					//else,will create a <li> showing 2 different strings depending in how many items the list has.
+					//else, will create a <li> showing 2 different strings depending in how many items the list has.
 					<li className="list-group-item full-box number-items py-0">
 						<p className="my-2">
 							{taskList.length === 1
