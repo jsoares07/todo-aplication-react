@@ -1,3 +1,29 @@
 .full-box{
     width: 400px;
 }
+
+.full-box{
+    width: 400px;
+}
+.number-items{
+    height: 40px;
+    color: gray;
+    font-style: italic;
+}
+.hide { /*Hide the button*/
+    display: none;
+}
+.hide:focus { /*To erase the exterior border of the button after pressing it*/
+  outline: none;
+  box-shadow: none;
+}
+.hide:hover { /*Show shadow for the button*/
+    box-shadow: 0 0 5px black;
+}
+.hide:active { /*Erase the shadow of the button after pressing it*/
+    box-shadow: none;
+}
+.selected:hover .hide { /*To show the button that is insideof the <li> with the class selected when the mouse is hovering*/
+    display: block;
+    color: red;
+}

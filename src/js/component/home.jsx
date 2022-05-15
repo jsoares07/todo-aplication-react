@@ -21,8 +21,13 @@ const Home = () => {
 		return;
 	}
 
-	function erase() {
+	function erase(i) {
 		// This function will erase the tasks added to the list
+		if (i > -1) {
+			//validate that the array is not empty
+			let deleteTask = taskList.filter((value, item) => item !== i);
+			setTaskList(deleteTask);
+		}
 	}
 
 	return (
@@ -54,7 +59,10 @@ const Home = () => {
 								{/* We add the button to delete */}
 								<button
 									type="button"
-									className="btn btn-link hide">
+									className="btn btn-link hide"
+									onClick={() => {
+										erase(item);
+									}}>
 									<i className="fas fa-times"></i>
 								</button>
 							</li>
